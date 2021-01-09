@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.css" rel="stylesheet">
+
+  <!-- animations -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wickedcss.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+  </head>
+  <body class="bodyMenu">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><strong>Pizza</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+<div class="container pt-5 mt-5 ">
+    <div class="card mt-5">
+    <div class="card-body" >
+      <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01"> Pizza size Options</label>
+  </div>
+  <select class="browser-default custom-select" id="inputGroupSelect01">
+    <option selected>Choose pizza size...</option>
+    <option value="600">Small(600)</option>
+    <option value="900">Medium(Ksh 900)</option>
+    <option value="1200">Large(ksh 1200)</option>
+  </select>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-append">
+    <label class="input-group-text" for="inputGroupSelect02">Pizza Crust Options</label>
+  </div>
+  <select class="browser-default custom-select" id="inputGroupSelect2">
+    <option selected>Choose pizza crust...</option>
+    <option value="200">Flatbread(ksh 200) </option>
+    <option value="150">Cast Iron(ksh 150)</option>
+    <option value="250">Crispy(ksh 250)</option>
+    <option value="300">Stuffed(ksh 300)</option>
+    <option value="100">Gluten-free(ksh 100)</option>
+  </select>
+
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-append">
+    <label class="input-group-text" for="inputGroupSelect03">Pizza toppings Options</label>
+  </div>
+  <select class="browser-default custom-select" id="inputGroupSelect03" aria-label="Example select with button addon" required>
+    <option selected>Choose pizza topping...</option>
+    <option value="100">Peri-peri Chicken(100)</option>
+    <option value="100">Boerewors(Ksh 100)</option>
+    <option value="50">Veg Tikka(ksh 50)</option>
+    <option value="50">Chicken (ksh 50)</option>
+    <option value="50">Mushroom(ksh 50)</option>
+    <option value="50">pinapple(ksh 50)</option>
+    <option value="50">Macon(ksh 50)</option>
+
+  </select>
+</div>
+
+<div class="input-group">
+  <select>
+    <input type="number" class="form-control input" id="noOfOrders" placeholder="how many pizzas?" required>
+  </select>
+</div><br>
+<p class="total">Total Price:</p>
+<div class="submit">
+  <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
+ <button type="submit" class="btn btn-info" value="Delivery" id="deliverPizza">Delivery</button>
+
+</div>
+    </div>
+  </div>
+
+</div>
+<div class="row" id="contactform">
+       <div class="col-md-12">
+         <h2 class="text-white text-center pt-5">Contact Details</h2>
+         <form id="new-contact">
+           <div class="row">
+             <div class="col">
+               <label class="text-white">First Name </label>
+               <input type="text" class="form-control form-control-sm" id="first-name" placeholder="First Name" required>
+             </div>
+             <div class="col">
+               <label class="text-white">Last Name</label>
+               <input type="text" class="form-control form-control-sm" id="last-name" placeholder="Last Name">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col">
+               <label class="text-white">Email Address</label>
+               <input type="email" class="form-control form-control-sm" id="email-address" placeholder="mail@mail.com" required>
+             </div>
+             <div class="col">
+               <label class="text-white">Phone Number</label>
+               <input class="form-control form-control-sm" type="tel" placeholder="+254722123456" maxlength="13" id="phone-number" required>
+             </div>
+             <div class="col-sm">
+               <label class="text-white">Telephone Number</label>
+               <input class="form-control form-control-sm" type="text" placeholder="Enter your delivery Address" id="location" required>
+             </div>
+           </div>
+           <div class="container" id="submit">
+             <button id="submitbutton" type="submit" class="btn text-white">Add</button>
+           </div>
+         </form>
+       </div>
+     </div>
+     <script src="js/mdb.min.js"></script>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
