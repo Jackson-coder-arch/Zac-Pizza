@@ -1,0 +1,15 @@
+body{
+    background-image: url(../img/restaurant.jpeg);
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+}
+/* #order{
+    color: transparent;
+    background-color: transparent;
+}
+#contactform{
+    background-color: transparent;
+} */
+#form{
+    background-color: rgba(0, 0, 0, 0);
+}
