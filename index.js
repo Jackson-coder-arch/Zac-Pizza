@@ -51,7 +51,7 @@ function resetFieldValues () {
     crustType = "";
     $("#pizza-quantity").val("");
 };
- start of my user logic
+//  start of my user logic
  $(document).ready(function() {
      var modal = $(".ordering-plate");
      var placeOrder = $(".place-order");
