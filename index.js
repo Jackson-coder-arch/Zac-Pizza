@@ -81,7 +81,7 @@ function resetFieldValues () {
       
         newPizzaOrder.toBeDelivered();
         alert ("you have ordered " + pizzaQuantity + " " + pizzaSize + " " + pizzaType + " pizza(s) with a  " + crustType + " crust and  " + extraToppings + " topping. It will be " + delivery + " .");
-        alert ("The total cost is  " + newPizzaOrder.price + " /=");
+        alert ("The total cost is  " + newPizzaOrder.price + " /= " +  " For Delivery fill the contact form below");
         resetFieldValues();
     });
     $("#delivery").click(function() {
