@@ -114,6 +114,21 @@ function resetFieldValues () {
         alert("Thank you for your feedback");
       });
 
+      var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmailAddress, inputtedPhoneNumber);
+        $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+        $("input#yourName").val("");
+        $("input#email-address").val("");
+        $("input#last-name").val("");
+        $("input#phone-number").val();
+        $(".contact").last().click(function() {
+          $("#show-contact").show();
+          $("#show-contact h2").text(newContact.firstName);
+          $(".first-name").text(newContact.firstName);
+          $(".last-name").text(newContact.lastName);
+          $(".email-address").text(newContact.email);
+
+        });
+
       var myAlert = document.getElementById('#contact')
 myAlert.addEventListener('closed.bs.alert', function () {
     alert("Thanks for reaching out to us.")
