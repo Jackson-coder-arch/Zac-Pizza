@@ -8,13 +8,12 @@
   <link href="css/mdb.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/wickedcss.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <!-- <link rel="stylesheet" href="../Css/order.css">
+    <link rel="stylesheet" href="../Css/order.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   </head>
@@ -43,102 +42,108 @@
         </div>
       </div>
     </nav>
-<div class="container pt-5 mt-5 " id="order">
-    <div class="card mt-5">
-    <div class="card-body" id="form" >
-      <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01"> Pizza size Options</label>
-  </div>
-  <select class="browser-default custom-select" id="inputGroupSelect01">
-    <option selected>Choose pizza size...</option>
-    <option value="600">Small(600)</option>
-    <option value="900">Medium(Ksh 900)</option>
-    <option value="1200">Large(ksh 1200)</option>
-  </select>
-</div>
+    <section>
+      <div class="ordering-plate" id="popup">
+          <span class="close-thing">&times;</span>
+          <h3 class="sizes-available text-white">Welcome to ZAC PIZZA</h3>
+          
+          <form class="what-you-want">
+              <div class="row">
+                  <div class="col-md-4 pizzatype">
+                      <label for="pizza" style="color:rgba(255, 255, 255, 0);">Pizza Type</label>
+                      <select name="pizzatype" id="pizzatype" class="form-control">
+                          <option value="Hawaiian">Hawaiian Pizza</option>
+                          <option value="Pepperoni">Pepperoni Pizza</option>
+                          <option value="Chicken-mushroom">Chicken Mushroom Pizza</option>
+                          <option value="BBQ-chicken">BBQ chicken Pizza</option>
+                          <option value="Buffalo">Buffalo Pizza</option>
+                          <option value="Deepdish">Deepdish Pizza</option>
+                          <option value="Meat">Meat Pizza</option>
+                          <option value="Margherita">Margherita Pizza</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4 crusttype">
+                      <label for="crust" style="color: rgba(255, 255, 255, 0);">Crust</label>
+                      <select name="crust" id="crusttype" class="form-control">
+                          <option value="stuffed">Stuffed - Ksh.150</option>
+                          <option value="thick">Thick - Ksh.200</option>
+                          <option value="Crispy">Crispy(Thin) - Ksh.100</option>
+                          <option value="gluten-free">Gluten Free - Ksh.200</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4 toppings">
+                      <label for="extra-toppings" style="color:rgba(255, 255, 255, 0);">Toppings</label>
+                      <select name="extra-toppings" id="toppings" class="form-control">
+                          <option value="Mushrooms">Mushroom</option>
+                          <option value="Cheese">Cheese</option>
+                          <option value="Black-olives">Black-Olives</option>
+                          <option value="Radichio">Radichio</option>
+                          <option value="Bacon">Bacon</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 pizza-quantity">
+                      <label for="quantity" style="color:rgba(255, 255, 255, 0);">Number of Pizza's</label>
+                      <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+                  </div>
+                  <div class="col-md-4 delivery">
+                      <label for="delivery" style="color:rgba(255, 255, 255, 0);">Delivery(300 Ksh) or Collect?</label>
+                      <select name="delivery" class="form-control" id="delivery">
+                          <option value="deliver">Delivery</option>
+                          <option value="collect">Collect</option>
+                      </select>
+                  </div>
+                  <div class="col-md-4 pizza-size">
+                      <label for="pizza-size" style="color:rgba(255, 255, 255, 0);">Size</label>
+                      <select class="form-control" id="pizza-size">
+                          <option value="large">Large</option>
+                          <option value="medium">Medium</option>
+                          <option value="small">Small</option>
+                      </select>
+                  </div>
+                  <input type="submit" id="order-ready" class="btn" value="submit">
+          </form>
 
-<div class="input-group mb-3">
-  <div class="input-group-append">
-    <label class="input-group-text" for="inputGroupSelect02">Pizza Crust Options</label>
-  </div>
-  <select class="browser-default custom-select" id="inputGroupSelect2">
-    <option selected>Choose pizza crust...</option>
-    <option value="200">Flatbread(ksh 200) </option>
-    <option value="150">Cast Iron(ksh 150)</option>
-    <option value="250">Crispy(ksh 250)</option>
-    <option value="300">Stuffed(ksh 300)</option>
-    <option value="100">Gluten-free(ksh 100)</option>
-  </select>
 
-</div>
-
-<div class="input-group mb-3">
-  <div class="input-group-append">
-    <label class="input-group-text" for="inputGroupSelect03">Pizza toppings Options</label>
-  </div>
-  <select class="browser-default custom-select" id="inputGroupSelect03" aria-label="Example select with button addon" required>
-    <option selected>Choose pizza topping...</option>
-    <option value="100">Peri-peri Chicken(100)</option>
-    <option value="100">Boerewors(Ksh 100)</option>
-    <option value="50">Veg Tikka(ksh 50)</option>
-    <option value="50">Chicken (ksh 50)</option>
-    <option value="50">Mushroom(ksh 50)</option>
-    <option value="50">pinapple(ksh 50)</option>
-    <option value="50">Macon(ksh 50)</option>
-
-  </select>
-</div>
-
-<div class="input-group">
-  <select>
-    <input type="number" class="form-control input" id="noOfOrders" placeholder="how many pizzas?" required>
-  </select>
-</div><br>
-<p class="total">Total Price:</p>
-<div class="submit">
-  <button type="button" class="btn btn-info"  id ="wholeOrder">Submit</button>
- <button type="submit" class="btn btn-info" value="Delivery" id="deliverPizza">Delivery</button>
-
-</div>
+      </div>
+          
+  </section>
+  <div class="row" id="contactform">
+    <div class="col-md-12">
+      <h2 class="text-white text-center pt-5">Contact Details</h2>
+      <form id="new-contact">
+        <div class="row">
+          <div class="col">
+            <label class="text-white">First Name </label>
+            <input type="text" class="form-control form-control-sm" id="first-name" placeholder="First Name" required>
+          </div>
+          <div class="col">
+            <label class="text-white">Last Name</label>
+            <input type="text" class="form-control form-control-sm" id="last-name" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="text-white">Email Address</label>
+            <input type="email" class="form-control form-control-sm" id="email-address" placeholder="mail@mail.com" required>
+          </div>
+          <div class="col">
+            <label class="text-white">Phone Number</label>
+            <input class="form-control form-control-sm" type="tel" placeholder="+254722123456" maxlength="13" id="phone-number" required>
+          </div>
+          <div class="col-sm">
+            <label class="text-white">Telephone Number</label>
+            <input class="form-control form-control-sm" type="text" placeholder="Enter your delivery Address" id="location" required>
+          </div>
+        </div>
+        <div class="container" id="submit">
+          <button id="submitbutton" type="submit" class="btn text-white">Add</button>
+        </div>
+      </form>
     </div>
   </div>
 
-</div>
-<div class="row" >
-       <div class="col-md-12">
-         <h2 class="text-white text-center pt-5">Contact Details</h2>
-         <form id="new-contact">
-           <div class="row">
-             <div class="col">
-               <label class="text-white">First Name </label>
-               <input type="text" class="form-control form-control-sm" id="first-name" placeholder="First Name" required>
-             </div>
-             <div class="col">
-               <label class="text-white">Last Name</label>
-               <input type="text" class="form-control form-control-sm" id="last-name" placeholder="Last Name">
-             </div>
-           </div>
-           <div class="row">
-             <div class="col">
-               <label class="text-white">Email Address</label>
-               <input type="email" class="form-control form-control-sm" id="email-address" placeholder="mail@mail.com" required>
-             </div>
-             <div class="col">
-               <label class="text-white">Phone Number</label>
-               <input class="form-control form-control-sm" type="tel" placeholder="+254722123456" maxlength="13" id="phone-number" required>
-             </div>
-             <div class="col-sm">
-               <label class="text-white">Telephone Number</label>
-               <input class="form-control form-control-sm" type="text" placeholder="Enter your delivery Address" id="location" required>
-             </div>
-           </div>
-           <div class="container" id="submit">
-             <button id="submitbutton" type="submit" class="btn text-white">Add</button>
-           </div>
-         </form>
-       </div>
-     </div>
      <script src="js/mdb.min.js"></script>
      <script src="js/jquery-3.3.1.min.js"></script>
      <script src="js/script.js"></script>
@@ -152,6 +157,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
+
+        <script src="../index.js"></script>
     
 </body>
 </html>
