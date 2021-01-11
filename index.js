@@ -51,66 +51,66 @@ function resetFieldValues () {
     crustType = "";
     $("#pizza-quantity").val("");
 };
-//  start of my user logic
-//  $(document).ready(function() {
-//      var modal = $(".ordering-plate");
-//      var placeOrder = $(".place-order");
-//      var close = $(".close-thing")
-//      placeOrder.click(function() {
-//          modal.show();
-//      });
-//      close.click(function() {
-//          modal.hide();
-//      });
-//     $(".what-you-want").submit(function(event) {
-//         event.preventDefault();
-//         var pizzaSize = $("#pizza-size").val();
+ start of my user logic
+ $(document).ready(function() {
+     var modal = $(".ordering-plate");
+     var placeOrder = $(".place-order");
+     var close = $(".close-thing")
+     placeOrder.click(function() {
+         modal.show();
+     });
+     close.click(function() {
+         modal.hide();
+     });
+    $(".what-you-want").submit(function(event) {
+        event.preventDefault();
+        var pizzaSize = $("#pizza-size").val();
         
-//         var pizzaType = $("#pizzatype").val();
+        var pizzaType = $("#pizzatype").val();
         
-//         var crustType = $("#crusttype").val();
+        var crustType = $("#crusttype").val();
         
-//         var extraToppings = $("#toppings").val();
+        var extraToppings = $("#toppings").val();
         
-//         var pizzaQuantity = parseInt($("#pizza-quantity").val());
+        var pizzaQuantity = parseInt($("#pizza-quantity").val());
      
-//         var delivery = $("#delivery").val();
+        var delivery = $("#delivery").val();
        
-//         var newPizzaOrder = new getPizzaOrder(pizzaType,crustType,extraToppings,pizzaQuantity,delivery,pizzaSize);
-//         newPizzaOrder.finalPrice();
+        var newPizzaOrder = new getPizzaOrder(pizzaType,crustType,extraToppings,pizzaQuantity,delivery,pizzaSize);
+        newPizzaOrder.finalPrice();
       
-//         newPizzaOrder.toBeDelivered();
-//         alert ("you have ordered " + pizzaQuantity + " " + pizzaSize + " " + pizzaType + " pizza(s) with a  " + crustType + " crust and  " + extraToppings + " topping. It will be " + delivery + " .");
-//         alert ("The total cost is  " + newPizzaOrder.price + " /=");
-//         resetFieldValues();
-//     });
-//     $("#delivery").click(function() {
-//         $("#contactform").slideDown();
-//       });
-//       $("#submitbutton").click(function(event) {
-//         event.preventDefault();
-//         var inputtedFirstName = $("input#first-name").val();
-//         var inputtedLastName = $("input#last-name").val();
-//         var inputtedEmailAddress = $("input#email-address").val();
-//         var inputtedPhoneNumber = $("input#phone-number").val();
-//         alert(inputtedFirstName + " " + inputtedLastName + " Your order will be ready in 15mins and will be delivered in the next 20 mins")
-//         // $("#contactform").hide();
-//         var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmailAddress, inputtedPhoneNumber);
-//         $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-//         $("input#first-name").val("");
-//         $("input#last-name").val("");
-//         $("input#email-address").val("");
-//         $("input#phone-number").val();
-//         $(".contact").last().click(function() {
-//           $("#show-contact").show();
-//           $("#show-contact h2").text(newContact.firstName);
-//           $(".first-name").text(newContact.firstName);
-//           $(".last-name").text(newContact.lastName);
-//           $(".email-address").text(newContact.email);
-//           $(".phone-number").text(newContact.phonenumber);
-//         });
-//       });
-//       $(".sendicon").click(function(event) {
-//         alert("Thank you for your feedback");
-//       });
-// });
+        newPizzaOrder.toBeDelivered();
+        alert ("you have ordered " + pizzaQuantity + " " + pizzaSize + " " + pizzaType + " pizza(s) with a  " + crustType + " crust and  " + extraToppings + " topping. It will be " + delivery + " .");
+        alert ("The total cost is  " + newPizzaOrder.price + " /=");
+        resetFieldValues();
+    });
+    $("#delivery").click(function() {
+        $("#contactform").slideDown();
+      });
+      $("#submitbutton").click(function(event) {
+        event.preventDefault();
+        var inputtedFirstName = $("input#first-name").val();
+        var inputtedLastName = $("input#last-name").val();
+        var inputtedEmailAddress = $("input#email-address").val();
+        var inputtedPhoneNumber = $("input#phone-number").val();
+        alert(inputtedFirstName + " " + inputtedLastName + " Your order will be ready in 15mins and will be delivered in the next 20 mins")
+        // $("#contactform").hide();
+        var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedEmailAddress, inputtedPhoneNumber);
+        $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
+        $("input#first-name").val("");
+        $("input#last-name").val("");
+        $("input#email-address").val("");
+        $("input#phone-number").val();
+        $(".contact").last().click(function() {
+          $("#show-contact").show();
+          $("#show-contact h2").text(newContact.firstName);
+          $(".first-name").text(newContact.firstName);
+          $(".last-name").text(newContact.lastName);
+          $(".email-address").text(newContact.email);
+          $(".phone-number").text(newContact.phonenumber);
+        });
+      });
+      $(".sendicon").click(function(event) {
+        alert("Thank you for your feedback");
+      });
+});
