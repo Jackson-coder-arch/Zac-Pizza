@@ -1,3 +1,9 @@
 body{
     background-image:url(../img/\ linkback.jpeg);
 }
+#contactcard{
+    background-color: transparent;
+}
+.card-body{
+    background-color: transparent;
+}
