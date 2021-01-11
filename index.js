@@ -113,29 +113,4 @@ function resetFieldValues () {
       $(".sendicon").click(function(event) {
         alert("Thank you for your feedback");
       });
-
-//       var newContact = new Contact(inputtedName, inputtedEmail, inputtedSubject, inputtedMessage);
-//         $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
-//         $("input#name").val("");
-//         $("input#email").val("");
-//         $("input#subject").val("");
-//         $("input#message").val();
-//         $(".contact").last().click(function() {
-//           $("#show-contact").show();
-//           $("#show-contact h2").text(newContact.firstName);
-//           $(".name").text(newContact.firstName);
-//           $(".email").text(newContact.email);
-//           $(".subject").text(newContact.subject);
-//           $(".message").text(newContact.message);
-
-//         });
-//         $("sendicon").click(function(event){
-//             alert("Thank you for reaching out.")
-//         })
-
-//       var myAlert = document.getElementById('#contact')
-// myAlert.addEventListener('closed.bs.alert', function () {
-//     alert("Thanks for reaching out to us.")
-  // so it doesn't get lost/reset to the start of the page
-  // document.getElementById('...').focus()
 });
