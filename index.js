@@ -63,7 +63,7 @@ function resetFieldValues () {
          modal.hide();
      });
     $(".what-you-want").submit(function(event) {
-        event.preventDefault();
+        // event.preventDefault();
         var pizzaSize = $("#pizza-size").val();
         
         var pizzaType = $("#pizzatype").val();
@@ -88,7 +88,7 @@ function resetFieldValues () {
         $("#contactform").slideDown();
       });
       $("#submitbutton").click(function(event) {
-        event.preventDefault();
+        // event.preventDefault();
         var inputtedFirstName = $("input#first-name").val();
         var inputtedLastName = $("input#last-name").val();
         var inputtedEmailAddress = $("input#email-address").val();
@@ -113,4 +113,11 @@ function resetFieldValues () {
       $(".sendicon").click(function(event) {
         alert("Thank you for your feedback");
       });
+
+      var myAlert = document.getElementById('#contact')
+myAlert.addEventListener('closed.bs.alert', function () {
+    alert("Thanks for reaching out to us.")
+  // so it doesn't get lost/reset to the start of the page
+  // document.getElementById('...').focus()
+})
 });
